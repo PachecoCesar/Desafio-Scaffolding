@@ -11,17 +11,22 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="row">
+  <div class="col col-3">
+
+  <div class="form-group">
     <%= form.label :Tittle%>
-    <%= form.text_field :Tittle %>
+    <%= form.text_field :Tittle, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :content %>
-    <%= form.text_field :content %>
+    <%= form.text_area :content, class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:'btn big btn-lg btn-block'%>
   </div>
 <% end %>
+</div>
+</div>
